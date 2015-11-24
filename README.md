@@ -7,7 +7,7 @@ Test Demos
 
 - Inverted index
 
-![sample](https://raw.githubusercontent.com/Lanmaq/TableViewDoubleScroller/master/Demo.gif)
+![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/Demo.gif)
 
 For first-hand experience, just open the project and run it.
 
