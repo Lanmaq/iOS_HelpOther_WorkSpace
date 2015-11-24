@@ -1,0 +1,6 @@
+.DS_Store
+TableViewDoubleScrollerTests/
+TableViewDoubleScrollerUITests/
+*.gif
+headImage/
+
