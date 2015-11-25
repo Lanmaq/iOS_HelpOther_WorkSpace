@@ -1,11 +1,12 @@
 # iOS_HelpOther_WorkSpace
 ## Introduction
 
-Test Demos
+Test demos 
+TableViews and  UISearchBar 
 
 ## Features
 
-- Inverted index
+- Inverted index and searchBar
 
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/iOS_HelpOther_Workspace_Demo.gif)
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/MLSearchBar.gif)
