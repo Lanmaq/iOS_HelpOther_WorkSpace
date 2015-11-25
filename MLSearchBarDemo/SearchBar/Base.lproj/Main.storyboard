@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-3c-zzG" customClass="MLSearchBar">
+                                <rect key="frame" x="0.0" y="220" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原生UISearchBar小小封装 不需要任何代码实现以下效果（xib）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipT-ah-fxM">
+                                <rect key="frame" x="0.0" y="170" width="600" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="UD6-q9-Mh8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原生UISearchBar小小封装 不需要任何代码实现以下效果 代码实现二行" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5d-N8-lbd">
+                                <rect key="frame" x="0.0" y="296" width="600" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="74C-SZ-ERW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UISearchBar 实现功能需求" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-mb-vfR">
+                                <rect key="frame" x="182" y="64" width="237" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="5vL-Gb-p2g"/>
+                                    <constraint firstAttribute="width" constant="237" id="J8M-rq-mIC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.023529411760000001" green="0.75686274509999996" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特点：圆角、board颜色自定义" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaB-XG-x3x">
+                                <rect key="frame" x="187" y="111" width="227" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="ORB-6B-LVi"/>
+                                    <constraint firstAttribute="height" constant="51" id="e4X-jx-azi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.023529411760000001" green="0.75686274509999996" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="g5d-N8-lbd" secondAttribute="trailing" constant="-20" id="1Sh-RC-IQq"/>
+                            <constraint firstItem="g5d-N8-lbd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1pW-Kb-VEs"/>
+                            <constraint firstItem="eY3-mb-vfR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="22K-B6-im2"/>
+                            <constraint firstAttribute="trailing" secondItem="sR8-3c-zzG" secondAttribute="trailing" id="GCW-Kf-jCy"/>
+                            <constraint firstItem="ipT-ah-fxM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KsD-MQ-Yxb"/>
+                            <constraint firstItem="g5d-N8-lbd" firstAttribute="top" secondItem="sR8-3c-zzG" secondAttribute="bottom" constant="32" id="PJh-nC-ZHl"/>
+                            <constraint firstItem="sR8-3c-zzG" firstAttribute="top" secondItem="ipT-ah-fxM" secondAttribute="bottom" constant="15" id="QdS-2V-ovl"/>
+                            <constraint firstItem="eY3-mb-vfR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="cnu-Rw-a5K"/>
+                            <constraint firstItem="jaB-XG-x3x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dUd-DB-S9O"/>
+                            <constraint firstItem="g5d-N8-lbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsJ-Pt-UHf"/>
+                            <constraint firstItem="sR8-3c-zzG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r8D-Sv-KxX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ipT-ah-fxM" secondAttribute="trailing" constant="-20" id="ve2-EO-2Na"/>
+                            <constraint firstItem="sR8-3c-zzG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-58" id="xmx-1w-koV"/>
+                            <constraint firstItem="jaB-XG-x3x" firstAttribute="top" secondItem="eY3-mb-vfR" secondAttribute="bottom" constant="8" id="yn0-r2-rmK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="347"/>
+        </scene>
+    </scenes>
+</document>
