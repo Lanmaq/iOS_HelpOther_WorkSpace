@@ -8,7 +8,7 @@ Test Demos
 - Inverted index
 
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/iOS_HelpOther_Workspace_Demo.gif)
-![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/MLSearchBarDemo/MLSearchBar.gif)
+![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/MLSearchBar.gif)
 
 For first-hand experience, just open the project and run it.
 
