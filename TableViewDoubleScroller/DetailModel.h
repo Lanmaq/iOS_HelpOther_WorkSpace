@@ -12,8 +12,8 @@
 @interface DetailModel : NSObject
 
 @property (nonatomic,strong) UIImage  *headImage;
-@property (nonatomic,strong) NSString *name;
-@property (nonatomic,strong) NSString *detail;
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *detail;
 
 - (instancetype)initHeadImage:(UIImage *)image name:(NSString *)name detail:(NSString *)detail;
 
