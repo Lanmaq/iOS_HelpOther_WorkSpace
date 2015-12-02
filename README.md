@@ -12,7 +12,7 @@ Here is open source code、if you need,you have!
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/iOS_HelpOther_Workspace_Demo.gif)
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/MLSearchBar.gif)
 
-- It's tell you about searching
+- It's tell you about searching UISearchDisplayController && UISearchController demo
 
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/iOS_SearchController.gif)
 
