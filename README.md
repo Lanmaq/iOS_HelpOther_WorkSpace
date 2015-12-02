@@ -12,6 +12,8 @@ Here is open source code、if you need,you have!
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/iOS_HelpOther_Workspace_Demo.gif)
 ![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/MLSearchBar.gif)
 
+![sample](https://raw.githubusercontent.com/Lanmaq/iOS_HelpOther_WorkSpace/master/iOS_SearchController)
+
 For first-hand experience, just open the project and run it.
 
 ## Requirements
