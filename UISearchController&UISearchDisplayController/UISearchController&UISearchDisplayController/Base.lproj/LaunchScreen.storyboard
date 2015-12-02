@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VN" translatesAutoresizingMaskIntoConstraints="NO" id="qeR-hQ-3bj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lanmaq Create" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-3m-CAU">
+                                <rect key="frame" x="141" y="27" width="319" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="oxv-k3-M9X"/>
+                                    <constraint firstAttribute="height" constant="111" id="pVE-33-Xoc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.023529411760000001" green="0.75686274509999996" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeChat:zhanxinghai1020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkR-DK-QX6">
+                                <rect key="frame" x="203" y="405" width="195" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KdI-40-xmW"/>
+                                    <constraint firstAttribute="width" constant="195" id="yyA-0X-FS6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.023529411760000001" green="0.75686274509999996" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github.com/Lanmaq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfK-Hw-xJX">
+                                <rect key="frame" x="185" y="434" width="231" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="0aq-Fa-8yM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.023529411760000001" green="0.75686274509999996" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FkR-DK-QX6" firstAttribute="centerX" secondItem="qfK-Hw-xJX" secondAttribute="centerX" id="2xn-er-D8a"/>
+                            <constraint firstItem="qeR-hQ-3bj" firstAttribute="centerX" secondItem="FkR-DK-QX6" secondAttribute="centerX" constant="-0.5" id="7CO-PX-IIg"/>
+                            <constraint firstItem="3xW-3m-CAU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BlZ-DK-gR6"/>
+                            <constraint firstItem="qeR-hQ-3bj" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Dii-iY-pz3"/>
+                            <constraint firstItem="3xW-3m-CAU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="7" id="ECh-5c-iiR"/>
+                            <constraint firstItem="qeR-hQ-3bj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="H60-aY-ms5"/>
+                            <constraint firstItem="qfK-Hw-xJX" firstAttribute="top" secondItem="FkR-DK-QX6" secondAttribute="bottom" constant="8" id="Ivj-BS-L3w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qeR-hQ-3bj" secondAttribute="trailing" constant="-20" id="Kvm-Xr-y6z"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qfK-Hw-xJX" secondAttribute="bottom" constant="145" id="etz-fu-6NX"/>
+                            <constraint firstItem="qeR-hQ-3bj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="kUJ-KC-97q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="334"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VN" width="640" height="426"/>
+    </resources>
+</document>
