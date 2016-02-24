@@ -19,8 +19,8 @@
 @property (nonatomic, strong) UISearchController *searchController;
 
 // for state restoration
-@property BOOL searchControllerWasActive;
-@property BOOL searchControllerSearchFieldWasFirstResponder;
+@property (nonatomic, assign) BOOL searchControllerWasActive;
+@property (nonatomic, assign) BOOL searchControllerSearchFieldWasFirstResponder;
 
 @property (nonatomic, strong) NSArray *models;
 
@@ -28,6 +28,7 @@
 
 @implementation SearchMainTableViewController
 
+#pragma mark - Life cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];

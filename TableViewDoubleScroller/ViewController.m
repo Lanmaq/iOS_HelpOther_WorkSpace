@@ -23,14 +23,15 @@ typedef NS_ENUM(NSInteger,COScrollDirectionStyle)
     NSInteger            _displaySectionIndex;
     CGFloat               _oldContentOffsetY;
 }
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (assign,nonatomic) COScrollDirectionStyle scrollDirection;
+@property (nonatomic, weak)   IBOutlet UITableView *tableView;
+@property (nonatomic, assign) COScrollDirectionStyle scrollDirection;
 
 @end
 
 @implementation ViewController
 
 #pragma mark - Life Cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,6 +48,10 @@ typedef NS_ENUM(NSInteger,COScrollDirectionStyle)
     }
    
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(scrollTableViewSectionIndex:) name:@"RemoteContainerSelectedNotification" object:nil];
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self forKeyPath:@"RemoteContainerSelectedNotification"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,7 +107,7 @@ typedef NS_ENUM(NSInteger,COScrollDirectionStyle)
     }
 }
 
-#pragma UIScrollViewDelegate
+#pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     _remoteContainerSelectedAction = NO;

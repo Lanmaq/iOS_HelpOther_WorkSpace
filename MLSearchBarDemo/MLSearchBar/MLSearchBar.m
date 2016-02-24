@@ -31,7 +31,7 @@
 }
 
 #pragma mark public 	initialization
--(instancetype) initWithFrame:(CGRect)frame boardColor:(UIColor *)color placeholderString:(NSString *)placehoderString
+- (instancetype)initWithFrame:(CGRect)frame boardColor:(UIColor *)color placeholderString:(NSString *)placehoderString
 {
     self = [super initWithFrame:frame];
     if (self ) {
@@ -43,7 +43,7 @@
 }
 
 #pragma mark - private method
--(void)setupWithFrame:(CGRect)frame
+- (void)setupWithFrame:(CGRect)frame
 {
     self.layer.cornerRadius = frame.size.height/2.0;
     self.layer.masksToBounds = YES;

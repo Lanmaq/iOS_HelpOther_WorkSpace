@@ -21,7 +21,6 @@
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(scrooll:) name:@"DownWillDisplayHeadNotification" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(scrooll:) name:@"UpEndDisplayingHeadNotification" object:nil];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -46,7 +45,7 @@
     return 15;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.selectedBackgroundView = [[UIView alloc]initWithFrame:cell.bounds];
@@ -57,14 +56,14 @@
 }
 
 #pragma mark - UITableViewDelegate
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[NSNotificationCenter defaultCenter]postNotificationName:@"RemoteContainerSelectedNotification" object:[NSNumber numberWithInteger:indexPath.row]];
     [self.parentViewController setValue:[NSNumber numberWithBool:YES] forKey:@"remoteContainerSelectedAction"];
 }
 
 #pragma mark - Private method
--(void)scrooll:(NSNotification *)noti
+- (void)scrooll:(NSNotification *)noti
 {
     NSInteger _rowIndex  = [noti.object integerValue];
     NSIndexPath *index = [NSIndexPath indexPathForRow:_rowIndex inSection:0];

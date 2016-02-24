@@ -15,9 +15,7 @@
  Write for my school brothers and help someone need this
  
  Have any problem:
- 
- My WeChat: zhanxinghai1020
- 
+  
  My GitHub: github.com/Lanmaq
  
  If you want to do something for custom searchBar or more, make friend with me by our wechat and talk about of customing....

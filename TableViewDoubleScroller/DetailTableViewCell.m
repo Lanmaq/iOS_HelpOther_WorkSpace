@@ -19,9 +19,9 @@
 
 - (void)configure:(DetailModel *)detailModel
 {
-    self.headImageView.image = detailModel.headImage;
-    self.nameLabel.text             = detailModel.name;
-    self.detailLabel.text              = detailModel.detail;
+    _headImageView.image = detailModel.headImage;
+    _nameLabel.text             = detailModel.name;
+    _detailLabel.text              = detailModel.detail;
 }
 
 @end
