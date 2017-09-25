@@ -14,12 +14,6 @@
 
 @implementation MLSearchBar
 
-#pragma mark - override drawRect:
-- (void)drawRect:(CGRect)rect
-{
-    [self setupWithFrame:rect];
-}
-
 #pragma mark - override  initWithFrame:
 - (instancetype)initWithFrame:(CGRect)frame
 {
